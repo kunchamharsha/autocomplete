@@ -1,6 +1,6 @@
 #Autocompleteserver
 
-A server to return autocomplete data 
+A Flask server that serves http endpoint to return autocomplete data 
 from a csv file using trie datastructure.
 
 #Prerequisites
@@ -40,7 +40,7 @@ Run the flask server
 
 >python app.py
 
-This will run the server on port number 5000,open browser and search for http://localhost:5000/api/search
+This will run the server on port number 5000,open browser and search for http://localhost:5000/api/search?searchterm=bala
 
 PS: The first request will take close to 180 seconds depending on the system configuration to load the keys from the csv into the Trie Datastructure. The rest of the search terms should take less than 8 ms on a localserver.
 
