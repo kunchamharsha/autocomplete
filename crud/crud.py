@@ -2,6 +2,8 @@ from flask import jsonify
 from pytrie import SortedStringTrie as Trie
 import pandas as pd
 import time
+import json
+import cPickle as pickle
 
 trieds=Trie() #trieds is short for trie datastructure.
 listofallnames=[]
@@ -39,13 +41,12 @@ def loadstrings():
         count=count+1
         if count%25000==0:
             #a counter to notify the admin on the progress of number of keys preprocessed yet.
-            print str(count)+' keys have been added to the dictionary'
+            print str(count)+' keys have been added to the dictionary\t\t time elapsed '+str(time.time()-start)
     for i in listofallnames:
         trieds[i]=listofallnames[i]
     end=time.time()
     print 'total time to add keys to the trieds is '+str(end-start)
-
-
+    return 'completed processing'
 
 def returnsearchresults(searchterm):
     """

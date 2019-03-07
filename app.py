@@ -1,4 +1,4 @@
-from flask import  app,Flask,request,jsonify
+from flask import  app,Flask,request,jsonify,render_template
 import sys
 
 app=Flask(__name__,static_url_path='')
@@ -17,6 +17,11 @@ def load_keys_onstartup():
     """
     crud.loadstrings()
     return 'Successfully completed'
+
+@app.route('/')
+def render_searchpage():
+    return render_template('search.html')
+
 
 @app.route('/api/search',methods=['GET'])
 def returncandidatestatus():
