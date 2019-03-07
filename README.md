@@ -1,21 +1,21 @@
-#Autocompleteserver
+# Autocompleteserver
 
 A Flask server that serves http endpoint to return autocomplete data 
 from a csv file using trie datastructure.
 
-#Prerequisites
+# Prerequisites
 
-Operating system
+## Operating system
 >mac,
 
 >linux
 
 
-Languages Used
+## Languages Used
 >Python,
 
 
-Python packages used
+## Python packages used
 
 >flask,
 
@@ -23,7 +23,7 @@ Python packages used
 
 >pandas
 
-#Installation 
+# Installation 
 Create a virtualenv
 
 >virtualenv venv
@@ -47,7 +47,7 @@ PS: The first request will take close to 180 seconds depending on the system con
 As for the ranking, the datastructure used only returns search terms that have a prefix match and the keys are sorted by their length in ascending order.
 
 
-#Endpoints and descriptions
+# Endpoints and descriptions
 
 FUNCTIONS
 
@@ -71,6 +71,6 @@ Filename: crud.py
         from the data repository based on the search term input by the users.
 
 
-#contact details
+# contact details
 For any further queries you can mail me on kunchamharsha@gmail.com,
 you can also raise an issue and I will get back to you as soon as possible
