@@ -53,16 +53,17 @@ FUNCTIONS
 
 Filename: app.py
 
-load_keys_onstartup()
-    This endpoint triggers loading of keys from the csv file to
-    Trie datastructure.
+    load_keys_onstartup()
+        This endpoint triggers loading of keys from the csv file to
+        Trie datastructure.
 
-returncandidatestatus()
-    This endpoint is used to return search results from the triedatastructure.
-    To make use of this endpoint type in http(s)://ipaddress:portnumber/api/search?searchterm=<searchterm>
-    Eg. http://127.0.0.1:5000/api/search?searchterm=bala
+    returncandidatestatus()
+        This endpoint is used to return search results from the triedatastructure.
+        To make use of this endpoint type in http(s)://ipaddress:portnumber/api/search?searchterm=<searchterm>
+        Eg. http://127.0.0.1:5000/api/search?searchterm=bala
 
 Filename: crud.py
+
     loadstrings()
         Function to load a csv file, preprocess the data and load it into the Trie Datastructure
 
