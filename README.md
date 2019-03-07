@@ -1,4 +1,4 @@
-# Autocompleteserver
+# Autocomplete server
 
 A Flask server that serves http endpoint to return autocomplete data 
 from a csv file using trie datastructure.
