@@ -42,7 +42,7 @@ Run the flask server
 
 This will run the server on port number 5000,open browser and search for http://localhost:5000/api/search?searchterm=bala
 
-PS: The first request will take close to 180 seconds depending on the system configuration to load the keys from the csv into the Trie Datastructure. The rest of the search terms should take less than 8 ms on a localserver.
+**PS: The first request will take close to 180 seconds depending on the system configuration to load the keys from the csv into the Trie Datastructure. The rest of the search terms should take less than 8 ms on a localserver.**
 
 As for the ranking, the datastructure used only returns search terms that have a prefix match and the keys are sorted by their length in ascending order.
 
